@@ -1,0 +1,20 @@
+<!-- employee-list.html -->
+<h2>{{ title }}</h2>
+<p>Company: {{ companyName }}</p>
+<p>Total employees: {{ employeeCount }}</p>
+<p>Status: {{employeeCount > 3 ? 'Large' : 'Small'}}</p><div [class.active]="isActive">Employee</div>
+<div [class.active]="isActive">Employee</div>
+<p [style.color]="isActive ? 'green' : 'red'">Status</p>
+
+<button (click)="flip()">ToggleButton</button>
+<p [style.color]="isActive ? 'green' : 'red'">
+  {{ isActive ? 'Active' : 'Inactive' }}
+</p>
+
+<input [(ngModel)]="searchText" placeholder="Search employee">
+<p>You typed: {{ searchText }}</p>
+<!-- <input (input)="onTyping($event)"> -->
+
+@for (emp of employees; track emp.id){
+	 <p>{{ emp.name }} works in {{ emp.department }}</p>
+}
