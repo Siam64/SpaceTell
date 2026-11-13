@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Nav } from './nav/nav'
 import { Sidebar } from './sidebar/sidebar'
 import { EmployeeList } from './employee-list/employee-list'
+// import { EmployeeCard } from './employee-card/employee-card'
 
 @Component({
   selector: 'app-root',

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { EmployeeCard } from '../employee-card/employee-card';
 
 @Component({
   selector: 'app-employee-list',
-  imports: [ FormsModule ],
+  imports: [ FormsModule,  EmployeeCard],
   templateUrl: './employee-list.html',
   styleUrl: './employee-list.css',
 })
